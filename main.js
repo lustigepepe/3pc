@@ -19,7 +19,7 @@ var allData = {
   Juniorprofessur: "Juniorprofessur mit allen ehren",
   "Berufungs-verfahren": "Berufungs-verfahren endlich Geschworener!",
   "Familie, Partnerschaft, Alltag": "Familie, Partnerschaft, Alltag .... etc.",
-  Mobilität: "Mobilität ist besser als Mobidität",
+  Mobilität: "Mobilität ist besser als Morbidität",
   "Blick aus dem Ausland": "Blick aus dem Ausland -> in's Land",
   Allgemein: "Allgemein aber nicht konkret"
 };
@@ -27,4 +27,5 @@ var allData = {
 function getNode(el) {
   document.getElementById("categoryValue").innerHTML = el.innerHTML.trim();
   document.getElementById("categoryValueText").innerHTML = allData[el.innerHTML.trim()];
+  el.focus();
 }
