@@ -1,0 +1,111 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.allCategoriesButton {
+    margin-top: 42vh;
+    color: #ffffff;
+    background-color: #0196cd;
+    width: 14em;
+    height: 7em;
+    border: 0px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(126, 141, 147, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay .category {
+    padding: 6px;
+    vertical-align: top;
+    color: #0196cd;
+    width: 9em;
+    height: 4em;
+    background-color: #ffffff;
+    border-collapse: separate;
+    border-spacing: 22px 22px;
+}
+
+.overlay td:hover,
+.overlay td:focus {
+    color: #ffffff;
+    background-color: #0196cd;
+}
+
+.overlay .closebtn {
+    text-align: right;
+    font-family: 'Noto Serif SC', serif;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.tableOverlay {
+    top: 25%;
+    padding-left: 22%;
+    color: #ffffff;
+    vertical-align: top;
+    border-collapse: separate;
+    border-spacing: 12px 12px;
+}
+
+
+.tableOverlay .header {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.columnCaVal {
+    vertical-align: top;
+    background-color: #0196cd;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px;
+    width: 26em;
+}
+
+#categoryValueText {
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.selectValue {
+    margin-top: -50%;
+    float: right;
+    margin-right: 25%;
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .tableOverlay {
+        padding-left: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .columnCaVal {
+        min-width: 125px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button tabindex="1" accesskey="0" class="allCategoriesButton" type="button" onclick="allCategories_Button()">Alle Kategorien</button>
+    </div>
+    <div id="categories" class="overlay">
+        <table class="tableOverlay">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th colspan="2" class="closebtn">
+                        <div tabindex="14" accesskey="c" onclick="closeNav()">&times;</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div tabindex="2" class="header">Alle Kategorien</div>
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <td style="width: 20px;"></td>
+                </tr>
+                <tr>
+                    <td tabindex="3" accesskey="1" onmouseover="getNode(this)" class="category">
+                        Karrierewege
+                    </td>
+                    <td tabindex="4" accesskey="2" onmouseover="getNode(this)" class="category">
+                        Promotion
+                    </td>
+                    <td tabindex="5" rowspan="5" class="columnCaVal">
+                        <div id="categoryValue">Bitte wählen Sie eine Kategorie oder eine Textsorte aus.</div>
+                        <div id="categoryValueText"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td tabindex="6" accesskey="3" onmouseover="getNode(this)" class="category">
+                        Habilitation
+                    </td>
+                    <td tabindex="7" accesskey="4" onmouseover="getNode(this)" class="category">
+                        Juniorprofessur
+                    </td>
+                </tr>
+                <tr>
+                    <td tabindex="8" accesskey="5" onmouseover="getNode(this)" class="category">
+                        Berufungs-verfahren
+                    </td>
+                    <td tabindex="9" accesskey="6" onmouseover="getNode(this)" class="category">
+                        Arbeitsplatz
+                    </td>
+                </tr>
+                <tr>
+                    <td tabindex="10" accesskey="7" onmouseover="getNode(this)" class="category">
+                        Familie, Partnerschaft, Alltag
+                    </td>
+                    <td tabindex="11" accesskey="8" onmouseover="getNode(this)" class="category">
+                        Mobilität
+                    </td>
+                </tr>
+                <tr>
+                    <td tabindex="12" accesskey="9" onmouseover="getNode(this)" class="category">
+                        Blick aus dem Ausland
+                    </td>
+                    <td tabindex="13" accesskey="10" onmouseover="getNode(this)" class="category">
+                        Allgemein
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
